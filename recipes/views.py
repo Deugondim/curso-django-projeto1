@@ -9,7 +9,7 @@ def home(request):
 
 
 def sobre(request):
-    return HttpResponse('SOBRE')
+    return render(request, 'recipes/contato.html')
 
 
 def contato(request):
