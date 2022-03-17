@@ -30,12 +30,11 @@
         </span>
         
 
-       
-
         <span class="recipe-author-item">
             <i class="fas fa-calendar-alt"></i>
             {{recipe.created_at|date:"d/m/Y  H:i:s"}} às {{recipe.created_at|date:"H:i:s"}}
         </span>
+
         {% if recipe.category is not None %}
             <span class="recipe-author-item">
                 <a href="{% url 'recipes:category' recipe.category.id %}">
